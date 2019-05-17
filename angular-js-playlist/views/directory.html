@@ -1,0 +1,21 @@
+<div class="content">
+
+    <button ng-click="order='name'">Order by Name</button>
+    <button ng-click="order='country'">Order by country</button>
+    <input type="text" ng-model="search" placeholder="Search for a Club"/>
+    <ul>
+      <li ng-repeat="club in clubs | orderBy: order | filter: search" ng-show="club.available">
+        <img ng-src="{{club.thumb}}" style="margin: -12px 10px 0 0; float: left; width: 50px; border-radius: 50%" ng-show="club.thumb" />
+        <h3>{{club.name}} - ({{club.country}})</h3>
+        <div class="remove" ng-click="removeclub(club)">x</div>
+        <span class="jersey" style="background: {{club.jersey}}">{{club.jersey}} jersey</span>
+      </li>
+    </ul>
+    <form ng-submit="addclub()">
+      <input type="text" placeholder="name" ng-model="newclub.name">
+      <input type="text" placeholder="jersey color" ng-model="newclub.jersey">
+      <input type="text" placeholder="country" ng-model="newclub.country">
+      <input type="submit" value="Add a new club">
+    </form>
+
+</div>

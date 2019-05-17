@@ -1,0 +1,25 @@
+[{
+	"name": "Barcelona",
+	"country": "Spain",
+	"jersey": "purple",
+	"available": true,
+	"thumb": "content/img/barca.png"
+}, {
+	"name": "Chelsea",
+	"country": "England",
+	"jersey": "blue",
+	"available": true,
+	"thumb": "content/img/chelsea.png"
+}, {
+	"name": "Real Madrid",
+	"country": "Spain",
+	"jersey": "gray",
+	"available": true,
+	"thumb": "content/img/realmadrid.png"
+}, {
+	"name": "Manchester United",
+	"country": "England",
+	"jersey": "red",
+	"available": true,
+	"thumb": "content/img/mutd.png"
+}]
